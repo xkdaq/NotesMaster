@@ -1,4 +1,4 @@
-package cn.com.caoyue.tinynote;
+package cn.com.caoyue.tinynote.bean;
 
 import android.app.ProgressDialog;
 import android.content.ContentValues;
@@ -15,6 +15,7 @@ import com.squareup.sqlbrite.SqlBrite;
 
 import java.util.ArrayList;
 
+import cn.com.caoyue.tinynote.R;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
@@ -32,6 +33,7 @@ public class MessageDB extends SQLiteOpenHelper {
     public interface DatebaseListener {
 
         void onDatabaseChnage();
+
         void onQueryResult(ArrayList<MessageItem> itemArray);
 
     }

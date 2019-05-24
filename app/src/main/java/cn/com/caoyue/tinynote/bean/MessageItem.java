@@ -1,4 +1,4 @@
-package cn.com.caoyue.tinynote;
+package cn.com.caoyue.tinynote.bean;
 
 public class MessageItem {
 

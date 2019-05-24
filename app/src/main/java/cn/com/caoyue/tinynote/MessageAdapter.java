@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import cn.com.caoyue.tinynote.bean.MessageItem;
+
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder> {
 
     private List<MessageItem> mData;

@@ -20,6 +20,8 @@ import com.jude.utils.JUtils;
 
 import java.util.ArrayList;
 
+import cn.com.caoyue.tinynote.bean.MessageDB;
+import cn.com.caoyue.tinynote.bean.MessageItem;
 import cn.com.caoyue.tinynote.vest.MainVestActivity;
 
 public class MainActivity extends AppCompatActivity implements MessageDB.DatebaseListener {

@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,8 @@ import android.widget.EditText;
 import com.jude.utils.JUtils;
 
 import java.util.ArrayList;
+
+import cn.com.caoyue.tinynote.vest.MainVestActivity;
 
 public class MainActivity extends AppCompatActivity implements MessageDB.DatebaseListener {
 
@@ -35,6 +38,13 @@ public class MainActivity extends AppCompatActivity implements MessageDB.Datebas
         init(savedInstanceState);
         //控件
         (findViewById(R.id.send_button)).setOnClickListener(new ListenerInMain());
+
+        findViewById(R.id.tv_webAct).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainVestActivity.class));
+            }
+        });
     }
 
     private void init(Bundle savedInstanceState) {

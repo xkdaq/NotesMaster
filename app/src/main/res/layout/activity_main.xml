@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_webAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/app_name" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_message_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
 
     <LinearLayout
         android:id="@+id/linearlayout_bottom"
@@ -9,44 +34,36 @@
         android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
         <EditText
             android:id="@+id/edittext_message_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:maxHeight="200dp"
             android:layout_weight="5"
-            android:hint="@string/input_message"
             android:fontFamily="@string/font_mono"
-            android:inputType="textNoSuggestions|textMultiLine" />
+            android:hint="@string/input_message"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:maxHeight="200dp" />
 
 
         <TextView
             android:id="@+id/send_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="3dp"
-            android:paddingRight="3dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
             android:layout_marginRight="4dp"
+            android:layout_weight="1"
             android:background="@color/colorAccent"
             android:foreground="?attr/selectableItemBackground"
-            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
             android:text="@string/jot_down"
-            android:textSize="16sp"
-            android:gravity="center"/>
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview_message_show"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/linearlayout_bottom">
 
-    </android.support.v7.widget.RecyclerView>
-
-</RelativeLayout>
+</LinearLayout>

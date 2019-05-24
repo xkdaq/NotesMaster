@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
     defaultConfig {
-        applicationId "cn.com.caoyue.tinynote"
+        applicationId "com.bsaska.saihiusaia"
         targetSdkVersion 28
         minSdkVersion 21
         versionCode 4
@@ -12,19 +12,23 @@ android {
         flavorDimensions "versionCode"
 
     }
+    signingConfigs {
+        release {
+            keyAlias 'notesmaster'
+            keyPassword 'notesmaster'
+            storeFile file('key/notesmaster.jks')
+            storePassword 'notesmaster'
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
-    productFlavors {
-        dev {
-        }
-        prod {
-            minSdkVersion 14
-        }
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -41,4 +45,32 @@ dependencies {
     implementation 'io.reactivex:rxandroid:1.1.0'
     implementation 'io.reactivex:rxjava:1.1.0'
     implementation 'com.squareup.sqlbrite:sqlbrite:0.6.2'
+
+
+    // Facebook sdk
+    implementation 'com.facebook.android:facebook-android-sdk:4.33.0'
+
+    // AppsFlyer
+    implementation 'com.appsflyer:af-android-sdk:4.8.13@aar'
+    implementation 'com.android.installreferrer:installreferrer:1.0'
+
+    // Others
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.google.gms:google-services:3.2.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+
+
 }

@@ -8,4 +8,6 @@
     <string name="delete_this_message">Delete</string>
     <string name="copy_to_clipboard_success">copy success</string>
     <string name="welcome">Welcome to Notes Master ，This is a simple notepad. Enter some of the content you want to record below, then press the [Record] button.</string>
+
+    <string name="facebook_app_id">2224916574390883</string>
 </resources>

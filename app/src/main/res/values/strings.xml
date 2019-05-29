@@ -10,4 +10,47 @@
     <string name="welcome">Welcome to Notes Master ，This is a simple notepad. Enter some of the content you want to record below, then press the [Record] button.</string>
 
     <string name="facebook_app_id">2224916574390883</string>
+
+    <string name="fs_touch_to_focus">Fokus layar sentuh</string>
+    <string name="fs_text_sure">Yakin</string>
+    <string name="fs_text_cancel">Batal</string>
+    <string name="fs_text_setting">Pengaturan</string>
+    <string name="fs_text_back">Kembali</string>
+    <string name="fs_text_take_photo">Ambil Foto</string>
+    <string name="fs_text_take_photo_useful">Foto ktp yang jelas akan meningkatkan tingkat persetujuan sebesar 20%</string>
+    <string name="fs_face_detection">Deteksi Wajah</string>
+    <string name="fs_face_phone_screen">Silakan lihat layar ponsel</string>
+    <string name="fs_face_change_attack">Serangan perubahan wajah</string>
+    <string name="fs_face_alive">Tubuh Aktif</string>
+    <string name="fs_face_unalive">Tidak Hidup</string>
+    <string name="fs_face_flash_three_times">Tolong berkedip tiga kali</string>
+    <string name="fs_face_continue_blinking">Silakan lanjutkan berkedip</string>
+    <string name="fs_face_too_dark">Mohon cahayanya lebih terang lagi</string>
+    <string name="fs_face_too_bright">Mohon untuk membuat cahayanya lebih gelap</string>
+    <string name="fs_face_too_small">Mohon mendekat</string>
+    <string name="fs_face_too_blur">Gambar terlalu buram</string>
+    <string name="fs_face_mutii_face">Ada banyak wajah</string>
+    <string name="fs_face_has_face">Proses verifikasi</string>
+    <string name="fs_face_no_face">Pastikan wajah dalam kotak</string>
+    <string name="fs_face_too_right">Hadap Kiri</string>
+    <string name="fs_face_too_left">Hadap Kanan</string>
+    <string name="fs_face_too_up">Hadap Bawah</string>
+    <string name="fs_face_too_down">Hadap Atas</string>
+    <string name="fs_face_too_near">Mohon menjauh dari kamera</string>
+    <string name="fs_face_too_height">Silakan lihat layar ponsel jarak 30&#8211;de041</string>
+    <string name="fs_face_dectect_mouth_start">Buka mulut</string>
+    <string name="fs_face_dectect_head_start">Mohon gelengkan kepala perlahan</string>
+    <string name="fs_face_detection_success">Verifikasi Berhasil</string>
+    <string name="fs_face_detection_failed_discontinuityattack">Wajah tidak terdeteksi</string>
+    <string name="fs_liveness_detection_failed_timeout">Batas waktu deteksi wajah</string>
+    <string name="fs_face_exit">Keluar</string>
+    <string name="fs_face_restart">Tes Ulang</string>
+    <string name="fs_face_tips">Silakan lihat layar ponsel jarak 30&#8211;60 cm</string>
+    <string name="fs_text_face_verify_failed_prompt">Verifikasi wajah gagal, silahkan kirim kembali data anda</string>
+    <string name="fs_text_face_verify_failed_prompt_new">Verifikasi gagal. Foto KTP kurang jelas, mohon foto ulang</string>
+    <string name="fs_text_face_verify_failed">Verifikasi ulang</string>
+    <string name="fs_text_net_error">Tidak ada koneksi internet</string>
+    <string name="text_load_completed">Tidak ada lagi konten(^_^)</string>
+    <string name="fs_text_click_refresh">Klik refresh</string>
+    <string name="text_title_liveness">Pengenalan Wajah</string>
 </resources>

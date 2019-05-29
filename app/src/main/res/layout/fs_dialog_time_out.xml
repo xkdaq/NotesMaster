@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fs_shape_white_solid_radius5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title_comm_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="5"
+            android:textColor="@color/fs_black_333333"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_content_comm_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:text="@string/fs_liveness_detection_failed_timeout"
+            android:gravity="center"
+            android:maxLines="5"
+            android:textColor="@color/fs_gray_666666"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/fs_shape_frame_gray"
+                android:gravity="center"
+                android:text="@string/fs_face_exit"
+                android:textColor="@color/fs_gray_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_re_start"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fs_face_restart"
+                android:textColor="@color/fs_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

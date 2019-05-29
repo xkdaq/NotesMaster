@@ -6,4 +6,14 @@
     <color name="messageTextColor">#000000</color>
     <color name="timeTextColor">#666666</color>
     <color name="white">#eceff1</color>
+
+    <color name="fs_white">#FFFFFFFF</color>
+    <color name="fs_color_FF9000">#FF9000</color>
+    <color name="fs_color_FF5000">#FF5000</color>
+    <color name="fs_black_666666">#666666</color>
+    <color name="fs_gray_666666">#666666</color>
+    <color name="fs_black_333333">#333333</color>
+    <color name="fs_gray_999999">#999999</color>
+    <color name="fs_color_FF8000">#FF8000</color>
+    <color name="fs_preview_mock">#9a000000</color>
 </resources>

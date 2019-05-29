@@ -33,6 +33,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
 }
 
 dependencies {
@@ -70,6 +81,11 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.7.0'
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
     implementation 'com.google.code.gson:gson:2.8.5'
+
+    // Face Detection
+    implementation(name: 'pafacedetector-4.3.2', ext: 'aar')
+    // Aliyun
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.8.0'
 
 
 

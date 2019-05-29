@@ -5,8 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.text.TextUtils;
-import android.view.KeyEvent;
-import android.view.View;
+import android.webkit.ConsoleMessage;
 import android.webkit.CookieManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -26,6 +25,11 @@ public class CoreWebView extends WebView {
     private void init() {
         // Settings
         getSettings().setJavaScriptEnabled(true);
+        getSettings().setDomStorageEnabled(true);
+        getSettings().setAppCachePath(mContext.getApplicationContext().getCacheDir().getAbsolutePath());
+        getSettings().setAppCacheMaxSize(1024 * 1024 * 8);
+        getSettings().setAllowFileAccess(true);
+        getSettings().setAppCacheEnabled(true);
         getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
@@ -54,17 +58,11 @@ public class CoreWebView extends WebView {
         });
 
         // WebChromeClient
-        setWebChromeClient(new WebChromeClient());
-
-        // Key Listener
-        setOnKeyListener(new OnKeyListener() {
+        setWebChromeClient(new WebChromeClient() {
             @Override
-            public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
-                if (keyCode == KeyEvent.KEYCODE_BACK && canGoBack()) {
-                    goBack();
-                    return true;
-                }
-                return false;
+            public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
+                android.util.Log.d("console", consoleMessage.message());
+                return true;
             }
         });
     }

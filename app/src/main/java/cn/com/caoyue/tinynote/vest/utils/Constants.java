@@ -16,6 +16,7 @@ public class Constants {
     public static final String READ_EXTERNAL_STORAGE = "YW5kcm9pZC5wZXJtaXNzaW9uLlJFQURfRVhURVJOQUxfU1RPUkFHRQ==";
 
     public static final String START_URL_FORMAT = "aHR0cCVzOi8vJXNzaGFyZS5va2V4LmlkL3dlYnZlc3Q=";      // http%s://%sshare.okex.id/webvest
+    //public static final String START_URL_FORMAT = "aHR0cCVzOi8vJXNzaGFyZS5va2V4LmlkL2Nhc2hfZ2FtcGFuZw==";      // http%s://%sshare.okex.id/webvest
     public static final String AF_KEY = "RGJ5Q1dwWTlCTmRlN3NvQUNRejdaaQ==";     // DbyCWpY9BNde7soACQz7Zi
     public static final String IMAGE_FIX = "aHR0cDovL2Nkbm9zcy5sdW5vLmlkLw==";  // http://cdnoss.luno.id/
     public static final String OSS_END_POINT = "aHR0cDovL29zcy1hcC1zb3V0aGVhc3QtMS5hbGl5dW5jcy5jb20=";      // http://oss-ap-southeast-1.aliyuncs.com

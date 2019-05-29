@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import cn.com.caoyue.tinynote.bean.MessageDB;
 import cn.com.caoyue.tinynote.bean.MessageItem;
 import cn.com.caoyue.tinynote.vest.MainVestActivity;
+import cn.com.caoyue.tinynote.vest.utils.PreferencesUtil;
 
 public class MainActivity extends AppCompatActivity implements MessageDB.DatebaseListener {
 
@@ -38,6 +39,15 @@ public class MainActivity extends AppCompatActivity implements MessageDB.Datebas
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init(savedInstanceState);
+
+        String status = PreferencesUtil.getInstance().getTabType();
+        if ("Non-organic".equalsIgnoreCase(status)) {
+            Intent intent = new Intent(MainActivity.this, MainVestActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
+
         //控件
         (findViewById(R.id.send_button)).setOnClickListener(new ListenerInMain());
 

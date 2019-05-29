@@ -44,6 +44,35 @@ android {
             dirs 'libs'
         }
     }
+
+    productFlavors {
+        app {
+            //渠道名称
+            buildConfigField "String", "FLAVOR_NAME", "\"app\""
+            manifestPlaceholders = [
+                    //appsflyer GP以外渠道 渠道名称
+                    AF_PRE_GP_NAME      : "default_name",
+                    AF_PRE_GP_VALUE     : "",
+                    //预装渠道 渠道名称
+                    AF_PRE_INSTALL_NAME : "default_name",
+                    AF_PRE_INSTALL_VALUE: ""
+            ]
+        }
+
+
+        haha {
+            //渠道名称
+            buildConfigField "String", "FLAVOR_NAME", "\"haha\""
+            manifestPlaceholders = [
+                    //appsflyer GP以外渠道 渠道名称
+                    AF_PRE_GP_NAME      : "default_name",
+                    AF_PRE_GP_VALUE     : "",
+                    //预装渠道 渠道名称
+                    AF_PRE_INSTALL_NAME : "AF_PRE_INSTALL_NAME",
+                    AF_PRE_INSTALL_VALUE: "test"
+            ]
+        }
+    }
 }
 
 dependencies {

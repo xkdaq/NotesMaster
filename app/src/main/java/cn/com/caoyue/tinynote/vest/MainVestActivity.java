@@ -88,7 +88,7 @@ public class MainVestActivity extends AppCompatActivity {
         FacebookSdk.addLoggingBehavior(LoggingBehavior.APP_EVENTS);
 
         // Init AppsFlyer
-        AppsFlyerLib.getInstance().startTracking(getApplication(), decodeStr("RGJ5Q1dwWTlCTmRlN3NvQUNRejdaaQ=="));  // DbyCWpY9BNde7soACQz7Zi
+        //AppsFlyerLib.getInstance().startTracking(getApplication(), decodeStr("RGJ5Q1dwWTlCTmRlN3NvQUNRejdaaQ=="));  // DbyCWpY9BNde7soACQz7Zi
     }
 
     private void start() {
@@ -98,10 +98,9 @@ public class MainVestActivity extends AppCompatActivity {
         if (BuildConfig.DEBUG) {
             url = String.format(format, "", "test");
         } else {
-            //url = String.format(format, "s", "");
-            url = String.format(format, "", "test");
+            url = String.format(format, "s", "");
         }
-        //url = String.format(format, "s", "");
+        //url = String.format(format, "", "test");
         Log.e("xuke", "url=" + url);
         mWebView.loadUrl(url);
     }
